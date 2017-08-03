@@ -2,6 +2,8 @@
 I wrote this program for UO CIS441, Computer Graphics (w/ Prof. Hank Childs).
 It takes as input a vector of triangles (vertex locations, vertex colors, vertex normals) + camera and lighting parameters, and renders an image.
 
+[![Final Output](https://user-images.githubusercontent.com/30641704/28946358-40467c64-785f-11e7-8ec1-3c202e96f294.gif)](https://vimeo.com/228142150 "Final Output")
+
 I am not uploading my source code publicly, out of respect for the instructor and students in future CIS441 classes.
 Please contact me privately if you would like to see the code.
 
@@ -21,9 +23,15 @@ Prof. Childs supplied inputs and some utility code:
 All other code was written by me by hand.
 
 This program was constructed in iterations, as per the course requirements:
-_Phase A_ - Output an image.
-_Phase B_ - Basic scanline. Assume 2D flat-bottom triangles (color; vertex locations) with device space coordinates.
-_Phase C_ - Introduce arbitrary 2D triangles (color; vertex locations), still device space coordinates.
-_Phase D_ - Introduce Z-buffer and 3D triangles (vertex locations & colors) with device space + depth coordinates.
-_Phase E_ - Introduce Phong shading, directional lighting. Add vertex normals to triangles.
-_Phase F_ - Introduce camera transforms, assume triangle coordinates are in world space.
+
+**Phase A** - Output an image.
+
+**Phase B** - Basic scanline. Assume 2D flat-bottom triangles (color; vertex locations) with device space coordinates.
+
+**Phase C** - Introduce arbitrary 2D triangles (color; vertex locations), still device space coordinates.
+
+**Phase D** - Introduce Z-buffer and 3D triangles (vertex locations & colors) with device space + depth coordinates.
+
+**Phase E** - Introduce Phong shading, directional lighting. Add vertex normals to triangles.
+
+**Phase F** - Introduce camera transforms, assume triangle coordinates are in world space.
